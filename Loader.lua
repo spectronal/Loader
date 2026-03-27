@@ -8,13 +8,13 @@ local KeyWindow = Fluent:CreateWindow({
     Title = "DramaHub",
     SubTitle = "Key System",
     TabWidth = 0,
-    Size = UDim2.fromOffset(380, 150),
+    Size = UDim2.fromOffset(380, 250),
     Acrylic = true,
-    Theme = "Dark",
+    Theme = "Darker",
     MinimizeKey = Enum.KeyCode.RightControl,
 })
 
-local Tab = KeyWindow:AddTab({ Title = "Main", Icon = "" })
+local Tab = KeyWindow:AddTab({ Title = "Key System", Icon = "" })
 
 Tab:AddInput("KeyInput", {
     Title = "Access Key",
@@ -24,6 +24,8 @@ Tab:AddInput("KeyInput", {
     Finished = false,
     Callback = function() end,
 })
+
+KeyWindow:SelectTab(1)
 
 Tab:AddButton({
     Title = "Check Key",
