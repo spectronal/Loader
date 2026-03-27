@@ -1,20 +1,20 @@
 local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
 
 local VALID_KEYS = {
-    ["DRAMA-KEY-FOR-MY-GIRLS"] = true,
+    ["HUB-KEYLESS"] = true,
 }
 
 local KeyWindow = Fluent:CreateWindow({
     Title = "DramaHub",
     SubTitle = "Key System",
-    TabWidth = 160,
-    Size = UDim2.fromOffset(400, 230),
+    TabWidth = 0,
+    Size = UDim2.fromOffset(380, 150),
     Acrylic = true,
     Theme = "Dark",
     MinimizeKey = Enum.KeyCode.RightControl,
 })
 
-local Tab = KeyWindow:AddTab({ Title = "Key", Icon = "key-round" })
+local Tab = KeyWindow:AddTab({ Title = "Main", Icon = "" })
 
 Tab:AddInput("KeyInput", {
     Title = "Access Key",
