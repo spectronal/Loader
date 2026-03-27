@@ -1,7 +1,7 @@
 local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
 
 local VALID_KEYS = {
-    ["HUB-KEYLESS"] = true,
+    ["feijaocomfarinha"] = true,
 }
 
 local KeyWindow = Fluent:CreateWindow({
