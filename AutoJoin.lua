@@ -1,4 +1,5 @@
 local Players = game:GetService("Players")
+local coreGui = game:GetService("CoreGui")
 local LocalPlayer = Players.LocalPlayer
 
 local settings = {
@@ -62,6 +63,10 @@ local function autoJoinGamemode(gamemode, select)
 end
 
 local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
+
+coreGui:FindFirstChild("ScreenGui").Name = "DramaHubAutoJoin"
+coreGui:FindFirstChild("DramaHubAutoJoin").DisplayOrder = 9999
+coreGui:FindFirstChild("DramaHubAutoJoin").Parent = LocalPlayer.PlayerGui
 
 local KeyWindow = Fluent:CreateWindow({
 	Title = "DramaHub",
